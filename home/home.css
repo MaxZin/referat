@@ -1,0 +1,152 @@
+.site {
+  display: grid;
+  justify-content: center;
+}
+
+.br {
+  margin: 10rem;
+}
+
+.container {
+  display: flex;
+  border: 1px solid white;
+  border-radius: 10px;
+  padding: 10px 20px;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.kyu1 {
+  display: grid;
+  justify-content: center;
+  height: 5rem;
+  width: 10rem;
+  border: 1px solid white;
+  background: #362419;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.kyu2 {
+  display: grid;
+  justify-content: center;
+  height: 5rem;
+  width: 10rem;
+  border: 1px solid white;
+  background: blue;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.kyu3 {
+  display: grid;
+  justify-content: center;
+  height: 5rem;
+  width: 10rem;
+  border: 1px solid white;
+  background: green;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.kyu4 {
+  display: grid;
+  justify-content: center;
+  height: 5rem;
+  width: 10rem;
+  border: 1px solid white;
+  background: linear-gradient(
+    orange 0px,
+    orange 33%,
+    green 33%,
+    green 66%,
+    orange 66%,
+    orange 100%
+  );
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.kyu5 {
+  display: grid;
+  justify-content: center;
+  height: 5rem;
+  width: 10rem;
+  border: 1px solid white;
+  background: orange;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.kyu6 {
+  display: grid;
+  justify-content: center;
+  height: 5rem;
+  width: 10rem;
+  border: 1px solid white;
+  background: linear-gradient(
+    yellow 0px,
+    yellow 33%,
+    orange 33%,
+    orange 66%,
+    yellow 66%,
+    yellow 100%
+  );
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.kyu7 {
+  display: grid;
+  justify-content: center;
+  height: 5rem;
+  width: 10rem;
+  border: 1px solid white;
+  background: yellow;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.kyu8 {
+  display: grid;
+  justify-content: center;
+  height: 5rem;
+  width: 10rem;
+  border: 1px solid white;
+  background: linear-gradient(
+    white 0px,
+    white 33%,
+    yellow 33%,
+    yellow 66%,
+    white 66%,
+    white 100%
+  );
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.container-item {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2rem;
+}
+
+.link {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  height: auto;
+  font-size: larger;
+  width: auto;
+  border: none;
+  background-color: transparent;
+}
+
+.btn:hover {
+  font-weight: bolder;
+}
