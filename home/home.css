@@ -23,7 +23,6 @@
   justify-content: center;
   height: 5rem;
   width: 10rem;
-  border: 1px solid white;
   background: #362419;
   margin-left: 5%;
   margin-right: 5%;
@@ -34,7 +33,6 @@
   justify-content: center;
   height: 5rem;
   width: 10rem;
-  border: 1px solid white;
   background: blue;
   margin-left: 5%;
   margin-right: 5%;
@@ -45,7 +43,6 @@
   justify-content: center;
   height: 5rem;
   width: 10rem;
-  border: 1px solid white;
   background: green;
   margin-left: 5%;
   margin-right: 5%;
@@ -56,7 +53,6 @@
   justify-content: center;
   height: 5rem;
   width: 10rem;
-  border: 1px solid white;
   background: linear-gradient(
     orange 0px,
     orange 33%,
@@ -74,7 +70,6 @@
   justify-content: center;
   height: 5rem;
   width: 10rem;
-  border: 1px solid white;
   background: orange;
   margin-left: 5%;
   margin-right: 5%;
@@ -85,7 +80,6 @@
   justify-content: center;
   height: 5rem;
   width: 10rem;
-  border: 1px solid white;
   background: linear-gradient(
     yellow 0px,
     yellow 33%,
@@ -103,7 +97,6 @@
   justify-content: center;
   height: 5rem;
   width: 10rem;
-  border: 1px solid white;
   background: yellow;
   margin-left: 5%;
   margin-right: 5%;
@@ -114,7 +107,6 @@
   justify-content: center;
   height: 5rem;
   width: 10rem;
-  border: 1px solid white;
   background: linear-gradient(
     white 0px,
     white 33%,
