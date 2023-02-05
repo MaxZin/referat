@@ -121,7 +121,7 @@
     <h3 class="disclaimer">Die Lernzettel sind Lehrmaterial des DJB.</h3>
     <h3 class="disclaimer">
         Die Originaldatei finden Sie
-        <a href="https://www.judobund.de/aus-fortbildung/pruefungsprogramm/kyu-pruefungsinhalte/" class="origin">
+        <a href="https://www.judobund.de/aus-fortbildung/pruefungsprogramm/kyu-pruefungsinhalte/" class="origin" target="_blank">
             hier
         </a>
         .

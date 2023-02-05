@@ -13,7 +13,7 @@
     <div class="background"></div>
     <div class="container">
         <div class="container-item" id="quiz">
-            <h2 class="text">Question</h2>
+            <h2 class="text" id="question">Question</h2>
             <ul>
                 <li>
                     <input type="radio" name="answer" id="a" class="answer">
