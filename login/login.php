@@ -10,7 +10,7 @@
     <title>Login</title>
 </head>
 
-<body style="background-color: black">
+<body style="background: rgb(22,22,22);">
     <br class="br">
     <div class="align">
         <form action="/referat/home/home.php" method="post" class="form">

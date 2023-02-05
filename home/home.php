@@ -9,7 +9,7 @@
     <title>Home</title>
 </head>
 
-<body style="background-color: black;" class="site">
+<body style="background: rgb(22,22,22);" class="site">
     <br class="br">
     <div class="container">
         <br style="margin: 2rem;">
@@ -126,6 +126,8 @@
         </a>
         .
     </h3>
+
+    <br style="margin: 5rem;">
 </body>
 
 </html>

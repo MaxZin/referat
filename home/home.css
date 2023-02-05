@@ -135,11 +135,12 @@
 
 .btn {
   height: auto;
-  font-size: larger;
+  font-size: medium;
   width: auto;
   border: none;
   background-color: transparent;
   transition: 250ms ease-in-out;
+  font-family: "Fira Code", monospace;
 }
 
 .btn:hover {

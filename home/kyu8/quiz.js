@@ -21,7 +21,7 @@ const quizData = [
         b:"Seitwärts und Rückwärts",
         c:"Vorwärts und Seitwärts",
         d:"Vorwärts, Rückwärts und Seitwärts",
-        correct:"d"
+        correct:"b"
     },
     {
         question:"Was macht man als drittes in der Prüfung?",

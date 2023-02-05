@@ -9,7 +9,7 @@
     <title>Test 8.Kyu</title>
 </head>
 
-<body style="background-color: black;">
+<body style="background: rgb(22,22,22);">
     <div class="background"></div>
     <div class="container">
         <div class="container-item" id="quiz">

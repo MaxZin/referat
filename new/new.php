@@ -10,7 +10,7 @@
   <title>Neuer Account</title>
 </head>
 
-<body style="background-color: black">
+<body style="background: rgb(22,22,22);">
   <?php if ($error) : ?>
     <p style="color: red;"><?php echo $error; ?></p>
   <?php endif; ?>
