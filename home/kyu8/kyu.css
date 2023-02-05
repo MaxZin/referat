@@ -15,8 +15,9 @@ body {
 }
 
 .background {
+  margin-top: 5rem;
   height: 4rem;
-  width: auto;
+  width: 100%;
   background: linear-gradient(
     white 0px,
     white 33%,
@@ -30,4 +31,8 @@ body {
 
 .text {
   color: white;
+}
+
+ul {
+  list-style-type: none;
 }

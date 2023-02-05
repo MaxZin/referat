@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap");
+
 .site {
   display: grid;
   justify-content: center;
@@ -137,8 +139,25 @@
   width: auto;
   border: none;
   background-color: transparent;
+  transition: 250ms ease-in-out;
 }
 
 .btn:hover {
   font-weight: bolder;
+}
+
+.disclaimer {
+  font-family: "Fira Code", monospace;
+  color: white;
+}
+
+.origin {
+  text-decoration: none;
+  color: crimson;
+  font-family: "Fira Code", monospace;
+  transition: 250ms ease-in-out;
+}
+
+.origin:hover {
+  color: darkturquoise;
 }
