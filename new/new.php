@@ -10,13 +10,42 @@
   <title>Neuer Account</title>
 </head>
 
+<?php 
+  $username;
+  $username_error = '';
+  if(($_POST)){
+  $username = $_POST["username"];
+  $username_error;
+  if(strlen($username)<3) {
+    $username_error = "Please choose longer username";
+  }}
+
+
+  $servername = "localhost";
+  $username = "username";
+  $password = "password";
+
+  // Create connection
+  $conn = new mysqli($servername, $username, $password);
+
+  // Check connection
+  if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+  }
+  $sql = "INSERT INTO tabelle (firstname, lastname, email) VALUES ('John', 'Doe', 'john@example.com')";
+
+  if ($conn->query($sql) === TRUE) {
+   //TODO: REDIRECT HOME
+  } else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+  }
+?>
+
 <body style="background: rgb(22,22,22);">
-  <?php if ($error) : ?>
-    <p style="color: red;"><?php echo $error; ?></p>
-  <?php endif; ?>
+
   <br class="br" />
   <div class="align">
-    <form action="/referat/home/home.php" method="post" class="form">
+    <form action="new.php" method="post" class="form">
       <div class="name">
         <label for="username">
           <h1>Username</h1>
@@ -24,6 +53,9 @@
         <br style="margin: 0.3rem" />
 
         <input type="text" id="username" name="username" />
+        <?php if ($username_error): ?>
+          <div class="error"><?php echo $username_error; ?></div>
+          <?php endif; ?>
       </div>
 
       <br style="margin: 2rem" />
