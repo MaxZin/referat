@@ -22,8 +22,8 @@
 
 
   $servername = "localhost";
-  $username = "username";
-  $password = "password";
+  $username = "root";
+  $password = "";
 
   // Create connection
   $conn = new mysqli($servername, $username, $password);
@@ -32,10 +32,11 @@
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  $sql = "INSERT INTO tabelle (firstname, lastname, email) VALUES ('John', 'Doe', 'john@example.com')";
+  $sql = "INSERT INTO referat (username, password, passnr) VALUES ('John', 'Doe', 'john@example.com')";
 
   if ($conn->query($sql) === TRUE) {
    //TODO: REDIRECT HOME
+   echo "Wilkommen";
   } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
   }
