@@ -10,36 +10,37 @@
   <title>Neuer Account</title>
 </head>
 
-<?php 
-  $username;
-  $username_error = '';
-  if(($_POST)){
+<?php
+$username;
+$username_error = '';
+if (($_POST)) {
   $username = $_POST["username"];
   $username_error;
-  if(strlen($username)<3) {
+  if (strlen($username) < 3) {
     $username_error = "Please choose longer username";
-  }}
-
-
-  $servername = "localhost";
-  $username = "root";
-  $password = "";
-
-  // Create connection
-  $conn = new mysqli($servername, $username, $password);
-
-  // Check connection
-  if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
   }
-  $sql = "INSERT INTO referat (username, password, passnr) VALUES ('John', 'Doe', 'john@example.com')";
+}
 
-  if ($conn->query($sql) === TRUE) {
-   //TODO: REDIRECT HOME
-   echo "Wilkommen";
-  } else {
-    echo "Error: " . $sql . "<br>" . $conn->error;
-  }
+
+$servername = "localhost";
+$username = "root";
+$password = "";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password);
+
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+$sql = "INSERT INTO referat (username, password, passnr) VALUES ('John', 'Doe', 'john@example.com')";
+
+if ($conn->query($sql) === TRUE) {
+  //TODO: REDIRECT HOME
+  echo "Wilkommen";
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
 ?>
 
 <body style="background: rgb(22,22,22);">
@@ -54,9 +55,9 @@
         <br style="margin: 0.3rem" />
 
         <input type="text" id="username" name="username" />
-        <?php if ($username_error): ?>
+        <?php if ($username_error) : ?>
           <div class="error"><?php echo $username_error; ?></div>
-          <?php endif; ?>
+        <?php endif; ?>
       </div>
 
       <br style="margin: 2rem" />
