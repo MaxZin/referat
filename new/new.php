@@ -13,31 +13,48 @@
 <?php
 $username;
 $username_error = '';
+$password;
+$password_error = '';
+$passnr;
+$passnr_error = '';
 if (($_POST)) {
   $username = $_POST["username"];
   $username_error;
   if (strlen($username) < 3) {
-    $username_error = "Please choose longer username";
+    $username_error = "Erstelle ein längeren Usernamen";
+  }
+  $password = $_POST["password"];
+  $password_error;
+  if (strlen($password) < 3) {
+    $password_error = "Erstelle ei längeres Passwort";
+  }
+  $passnr = $_POST["passnr"];
+  $passnr_error;
+  if (strlen($passnr) < 3) {
+    $passnr_error = "Das is keine Judo Pass Nr.";
   }
 }
 
-
 $servername = "localhost";
-$username = "root";
+$username2 = "root";
+$password2 = "";
+$dbname = "referat";
+
+$username = "";
 $password = "";
 
 // Create connection
-$conn = new mysqli($servername, $username, $password);
+$conn = new mysqli($servername, $username2, $password2, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
-$sql = "INSERT INTO referat (username, password, passnr) VALUES ('John', 'Doe', 'john@example.com')";
+$sql = "INSERT INTO users (username, password, passnr) VALUES ('$username', '$password', '$passnr')";
 
 if ($conn->query($sql) === TRUE) {
+  header('Location: ../home/home.php');
   //TODO: REDIRECT HOME
-  echo "Wilkommen";
 } else {
   echo "Error: " . $sql . "<br>" . $conn->error;
 }
@@ -68,6 +85,9 @@ if ($conn->query($sql) === TRUE) {
         </label>
         <br style="margin: 0.3rem" />
         <input type="password" id="password" name="password" />
+        <?php if ($password_error) : ?>
+          <div class="error"><?php echo $password_error; ?></div>
+        <?php endif; ?>
       </div>
 
       <br style="margin: 2rem" />
@@ -78,6 +98,9 @@ if ($conn->query($sql) === TRUE) {
         </label>
         <br style="margin: 0.3rem" />
         <input type="text" id="passnr" name="passnr" />
+        <?php if ($passnr_error) : ?>
+          <div class="error"><?php echo $passnr_error; ?></div>
+        <?php endif; ?>
       </div>
 
       <br style=" margin: 0.5rem" />
