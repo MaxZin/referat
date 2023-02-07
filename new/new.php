@@ -11,11 +11,11 @@
 </head>
 
 <?php
-$username;
+$username = '';
 $username_error = '';
-$password;
+$password = '';
 $password_error = '';
-$passnr;
+$passnr = 0;
 $passnr_error = '';
 if (($_POST)) {
   $username = $_POST["username"];
@@ -36,15 +36,13 @@ if (($_POST)) {
 }
 
 $servername = "localhost";
-$username2 = "root";
-$password2 = "";
+$db_username = "root";
+$db_password = "";
 $dbname = "referat";
 
-$username = "";
-$password = "";
 
 // Create connection
-$conn = new mysqli($servername, $username2, $password2, $dbname);
+$conn = new mysqli($servername, $db_username, $db_password, $dbname);
 
 // Check connection
 if ($conn->connect_error) {
