@@ -11,63 +11,53 @@
 </head>
 
 <?php
-// Connect to the database
-$mysqli = new mysqli("localhost", "root", "", "referat");
+ $username = 'username';
+ $password = 'password';
+ $servername = "localhost";
+ $db_username = "root";
+ $db_password = "";
+ $db_name = "referat";
+ $wrong_pass = '';
+ $wrong_name = '';
+ 
+ // Create connection
+ $conn = new mysqli($servername, $db_username, $db_password, $db_name);
+ 
+ // Check connection
+ if ($conn->connect_error) {
+   die("Connection failed: " . $conn->connect_error);
+ }
 
-// Check connection
-if ($mysqli->connect_error) {
-    die("Connection failed: " . $mysqli->connect_error);
-}
-
-// Check if the form has been submitted
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // Get the username and password from the form
+ if (($_POST)) {
     $username = $_POST["username"];
     $password = $_POST["password"];
+ }
 
-    // Prepare and execute a query to retrieve the user from the database
-    $stmt = $mysqli->prepare("SELECT * FROM users WHERE username = ?");
-    $stmt->bind_param("s", $username);
-    $stmt->execute();
-    $result = $stmt->get_result();
+ $check_name = "SELECT * FROM users WHERE username='$username'";
+ $result_name = $conn->query($check_name);
+ $check_password = "SELECT * FROM users WHERE password='$password'";
+ $result_password = $conn->query($check_password);
 
-    // If a user was found with the given username
-    if ($result->num_rows > 0) {
-        $user = $result->fetch_assoc();
-
-        // Verify the password
-        if (password_verify($password, $user["password"])) {
-            // Start a session and store the user information
-            session_start();
-            $_SESSION["logged_in"] = true;
-            $_SESSION["user_id"] = $user["id"];
-            $_SESSION["username"] = $user["username"];
-
-            // Redirect the user to the homepage
-            header("Location: ../home/home.php");
-            exit();
-        } else {
-            // Password is incorrect
-            echo "Flasches Passwort.";
-        }
+ if ($result_name->num_rows > 0) {
+    // User already exists in the database
+    if ($result_password->num_rows > 0) {
+        // Password already exists in the database
+        header('Location: ../home/home.php');
+        exit();
     } else {
-        // No user was found with the given username
-        echo "Falscher Username.";
+        echo $wrong_pass = 'Falsches Passwort.';
     }
+  } else {
+    $wrong_name = 'Falscher Username.';
+  }
 
-    // Close the statement
-    $stmt->close();
-}
-
-// Close the database connection
-$mysqli->close();
 ?>
 
 
 <body style="background: rgb(22,22,22);">
     <br class="br">
     <div class="align">
-        <form action="../home/home.php" method="post" class="form">
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post" class="form">
             <div class="name">
                 <label for="username">
                     <h1>Userame</h1>
