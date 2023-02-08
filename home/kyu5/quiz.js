@@ -1,123 +1,179 @@
 const quizData = [
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Welche Fallschulen musst du zeigen?",
+        a:"Vorwärts, rückwärts und seitwärts(beidseitig)",
+        b:"Vorwärts(beidseitig), rückwärts und Seitwärts",
+        c:"Vorwärts(beidseitig), rückwärts mit Hindernis und Seitwärts",
+        d:"Vorwärts(beidseitig) mit Hindernis, rückwärts und Seitwärts(beidseitig)",
+        correct:"d"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der erste Wurf?",
+        a:"Sasae-tsuri-kumi-ashi oder Hiza-guruma",
+        b:"Morote-seoi-nage",
+        c:"Okuri-ashi-barai",
+        d:"Harai-goshi",
+        correct:"b"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der zweite Wurf?",
+        a:"Harai-goshi",
+        b:"Okuri-ashi-barai",
+        c:"Sasae-tsuri-kumi-ashi oder Hiza-guruma",
+        d:"Harai-goshi",
+        correct:"c"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der dritte Wurf?",
+        a:"Okuri-ashi-barai",
+        b:"Morote-seoi-nage",
+        c:"Osoto-gari",
+        d:"Harai-goshi",
+        correct:"a"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der vierte Wurf?",
+        a:"Sasae-tsuri-kumi-ashi oder Hiza-guruma",
+        b:"Harai-goshi",
+        c:"Morote-seoi-nage",
+        d:"Osoto-gari",
+        correct:"d"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der fünfte Wurf?",
+        a:"Osoto-gari",
+        b:"Harai-goshi",
+        c:"Tsuri-goshi",
+        d:"Morote-seoi-nage",
+        correct:"b"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist die erste Boden Technik?",
+        a:"Waki-gatame",
+        b:"Ashi-garami",
+        c:"Ude-garami",
+        d:"Juji-gatame",
+        correct:"d"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist die zweite Boden Technik?",
+        a:"Juji-gatame",
+        b:"Waki-gatame",
+        c:"Ude-garami",
+        d:"Ashi-garami",
+        correct:"c"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was machst du in der Anwendung Stand als erstes?",
+        a:"Konrter nach Angriff von Uke",
+        b:"Kombination nach Angriff von Tori",
+        c:"Konrter nach Angriff von Tori",
+        d:"Kombination nach Angriff von Uke",
+        correct:"a"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was machst du in der Anwendung Stand als zweites?",
+        a:"Kombination nach Angriff von Uke",
+        b:"Kombination nach Angriff von Tori",
+        c:"Konrter nach Angriff von Tori",
+        d:"Konrter nach Angriff von Uke",
+        correct:"b"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was machst du in der Anwendung Boden als erstes?",
+        a:"Juji-gatame aus der Bankstellung von Uke",
+        b:"Wechsel von Festhalte zu Hebel oder Schlüssel",
+        c:"Befreiung aus der Beinklammer von Uke",
+        d:"Beinklammer als Verteidigung aus der Rückenlage",
+        correct:"b"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was machst du in der Anwendung Boden als zweites?",
+        a:"Juji-gatame aus der Bankstellung von Uke",
+        b:"Wechsel von Festhalte zu Hebel oder Schlüssel",
+        c:"Befreiung aus der Beinklammer von Uke",
+        d:"Beinklammer als Verteidigung aus der Rückenlage",
+        correct:"d"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was machst du in der Anwendung Boden als drittes?",
+        a:"Juji-gatame aus der Bankstellung von Uke",
+        b:"Wechsel von Festhalte zu Hebel oder Schlüssel",
+        c:"Befreiung aus der Beinklammer von Uke",
+        d:"Beinklammer als Verteidigung aus der Rückenlage",
+        correct:"c"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was machst du in der Anwendung Boden als viertes?",
+        a:"Juji-gatame aus der Bankstellung von Uke",
+        b:"Wechsel von Festhalte zu Hebel oder Schlüssel",
+        c:"Befreiung aus der Beinklammer von Uke",
+        d:"Beinklammer als Verteidigung aus der Rückenlage",
+        correct:"b"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist Tsukuri?",
+        a:"Anriss",
+        b:"Niederwurf",
+        c:"Platzwechsel",
+        d:"Laufen",
+        correct:"c"
+    },
+    {
+        question:"Was ist Kuzushi?",
+        a:"Anriss",
+        b:"Niederwurf",
+        c:"Platzwechsel",
+        d:"Laufen",
+        correct:"a"
+    },
+    {
+        question:"Was ist Kake?",
+        a:"Anriss",
+        b:"Niederwurf",
+        c:"Platzwechsel",
+        d:"Laufen",
+        correct:"b"
+    },
+    {
+        question:"Was sind Ashi-waza?",
+        a:"Fußtechniken",
+        b:"Hüfttechniken",
+        c:"Hand- und Schultertechniken",
+        d:"Opfertechniken in die Rückenlage",
+        correct:"a"
+    },
+    {
+        question:"Was sind Te-und Kata-waza?",
+        a:"Opfertechniken in die Seitenlage",
+        b:"Hüfttechniken",
+        c:"Hand- und Schultertechniken",
+        d:"Opfertechniken in die Rückenlage",
+        correct:"c"
+    },
+    {
+        question:"Was sind Koshi-waza?",
+        a:"Opfertechniken in die Seitenlage",
+        b:"Hüfttechniken",
+        c:"Hand- und Schultertechniken",
+        d:"Opfertechniken in die Rückenlage",
+        correct:"b"
+    },
+    {
+        question:"Was sind Ma-sutemi-waza?",
+        a:"Opfertechniken in die Seitenlage",
+        b:"Hüfttechniken",
+        c:"Hand- und Schultertechniken",
+        d:"Opfertechniken in die Rückenlage",
+        correct:"d"
+    },
+    {
+        question:"Was sind Yoko-sutemi-waza?",
+        a:"Opfertechniken in die Seitenlage",
+        b:"Hüfttechniken",
+        c:"Hand- und Schultertechniken",
+        d:"Opfertechniken in die Rückenlage",
+        correct:"a"
     },
 ];
 

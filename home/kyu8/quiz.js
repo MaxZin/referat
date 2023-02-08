@@ -119,6 +119,38 @@ const quizData = [
         d:"Kano",
         correct:"a"
     },
+    {
+        question:"Was heißt Sore-made?",
+        a:"Kampfunterbrechung",
+        b:"Kampfbeginn",
+        c:"Kampfende",
+        d:"Festhalte angesagt",
+        correct:"c"
+    },
+    {
+        question:"Was heißt Hajime?",
+        a:"Kampfunterbrechung",
+        b:"Kampfbeginn",
+        c:"Kampfende",
+        d:"Festhalte angesagt",
+        correct:"b"
+    },
+    {
+        question:"Was heißt Mate?",
+        a:"Kampfunterbrechung",
+        b:"Kampfbeginn",
+        c:"Kampfende",
+        d:"Festhalte angesagt",
+        correct:"a"
+    },
+    {
+        question:"Was heißt Osae-komi?",
+        a:"Kampfunterbrechung",
+        b:"Kampfbeginn",
+        c:"Kampfende",
+        d:"Festhalte angesagt",
+        correct:"d"
+    },
 ];
 
 const quiz = document.getElementById('quiz')

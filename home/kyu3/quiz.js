@@ -1,123 +1,123 @@
 const quizData = [
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der erste Wurf?",
+        a:"Tani-otoshi",
+        b:"Sumi-gaeshi",
+        c:"Koshi-guruma",
+        d:"Ushiro-goshi",
+        correct:"c"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der zweite Wurf?",
+        a:"Tani-otoshi",
+        b:"Sumi-gaeshi",
+        c:"Koshi-guruma",
+        d:"Ushiro-goshi",
+        correct:"d"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der dritte Wurf?",
+        a:"Tani-otoshi",
+        b:"Sumi-gaeshi",
+        c:"Koshi-guruma",
+        d:"Hane-goshi",
+        correct:"d"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der vierte Wurf?",
+        a:"Tani-otoshi",
+        b:"Sumi-gaeshi",
+        c:"Koshi-guruma",
+        d:"Hane-goshi",
+        correct:"b"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der fünfte Wurf?",
+        a:"Tani-otoshi",
+        b:"Sumi-gaeshi",
+        c:"Koshi-guruma",
+        d:"Hane-goshi",
+        correct:"a"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist die erste Boden Technik?",
+        a:"Ashi-gatame",
+        b:"Ashi-jime",
+        c:"Ashi-garami",
+        d:"Ashi-waza",
+        correct:"a"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist die zweite Boden Technik?",
+        a:"Ashi-gatame",
+        b:"Ashi-jime",
+        c:"Ashi-garami",
+        d:"Ashi-waza",
+        correct:"c"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was machst du in der Anwendung Stand als erstes?",
+        a:"Zwei frei Wählbare Konter wenn Uke angreift",
+        b:"Die fünf wurftechiken aus dem Stand",
+        c:"Die fünf wurftechiken aus sinnvollen Situationen",
+        d:"Zwei frei Wählbare Kombinationen wenn Uke blockt",
+        correct:"c"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was machst du in der Anwendung Stand als zweites?",
+        a:"Zwei frei Wählbare Konter wenn Uke angreift",
+        b:"Die fünf wurftechiken aus dem Stand",
+        c:"Die fünf wurftechiken aus sinnvollen Situationen",
+        d:"Zwei frei Wählbare Kombinationen wenn Uke blockt",
+        correct:"d"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was machst du in der Anwendung Boden als erstes?",
+        a:"zwei unterschiedliche Techniken im Übergang Stand-Boden nach Ukes missglückten Angriff",
+        b:"zwei unterschiedliche Techniken im Übergang Stand-Boden nach Toris teilweise erfolgreichen Angriff",
+        c:"Die beiden Boden Techniken aus sinnvollen Situationen",
+        d:"Die beiden Boden Techniken im Übergang Stand-Boden",
+        correct:"a"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was machst du in der Anwendung Boden als zweites?",
+        a:"zwei unterschiedliche Techniken im Übergang Stand-Boden nach Ukes missglückten Angriff",
+        b:"zwei unterschiedliche Techniken im Übergang Stand-Boden nach Toris teilweise erfolgreichen Angriff",
+        c:"Die beiden Boden Techniken aus sinnvollen Situationen",
+        d:"Die beiden Boden Techniken im Übergang Stand-Boden",
+        correct:"b"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Es muss eine Kata vorgezeigt werden. Welcher Wurfgruppe gehört diese an?",
+        a:"Ashi-waza",
+        b:"Koshi-waza",
+        c:"Te- und Kata-waza",
+        d:"Ma-sutemi-waza",
+        correct:"b"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der erste Wurf?",
+        a:"O-goshi",
+        b:"Uki-goshi",
+        c:"Tsuri-komi-goshi",
+        d:"Hane-goshi",
+        correct:"b"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der zweite Wurf?",
+        a:"O-goshi",
+        b:"Uki-goshi",
+        c:"Tsuri-komi-goshi",
+        d:"Hane-goshi",
+        correct:"d"
     },
     {
-        question:"?",
-        a:"",
-        b:"",
-        c:"",
-        d:"",
-        correct:""
+        question:"Was ist der dritte Wurf?",
+        a:"O-goshi",
+        b:"Uki-goshi",
+        c:"Tsuri-komi-goshi",
+        d:"Hane-goshi",
+        correct:"c"
     },
 ];
 
