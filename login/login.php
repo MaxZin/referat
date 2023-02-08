@@ -5,40 +5,40 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" type="image/svg+xml" href="/svg/favicon.svg">
+    <link rel="icon" type="image/svg+xml" href="../svg/favicon.svg">
     <link rel="stylesheet" href="login.css">
     <title>Login</title>
 </head>
 
 <?php
- $username = 'username';
- $password = 'password';
- $servername = "localhost";
- $db_username = "root";
- $db_password = "";
- $db_name = "referat";
- $wrong_pass = '';
- $wrong_name = '';
- 
- // Create connection
- $conn = new mysqli($servername, $db_username, $db_password, $db_name);
- 
- // Check connection
- if ($conn->connect_error) {
-   die("Connection failed: " . $conn->connect_error);
- }
+$username = 'username';
+$password = 'password';
+$servername = "localhost";
+$db_username = "root";
+$db_password = "";
+$db_name = "referat";
+$wrong_pass = '';
+$wrong_name = '';
 
- if (($_POST)) {
+// Create connection
+$conn = new mysqli($servername, $db_username, $db_password, $db_name);
+
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+
+if (($_POST)) {
     $username = $_POST["username"];
     $password = $_POST["password"];
- }
+}
 
- $check_name = "SELECT * FROM users WHERE username='$username'";
- $result_name = $conn->query($check_name);
- $check_password = "SELECT * FROM users WHERE password='$password'";
- $result_password = $conn->query($check_password);
+$check_name = "SELECT * FROM users WHERE username='$username'";
+$result_name = $conn->query($check_name);
+$check_password = "SELECT * FROM users WHERE password='$password'";
+$result_password = $conn->query($check_password);
 
- if ($result_name->num_rows > 0) {
+if ($result_name->num_rows > 0) {
     // User already exists in the database
     if ($result_password->num_rows > 0) {
         // Password already exists in the database
@@ -47,9 +47,9 @@
     } else {
         echo $wrong_pass = 'Falsches Passwort.';
     }
-  } else {
+} else {
     $wrong_name = 'Falscher Username.';
-  }
+}
 
 ?>
 

@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/png" href="svg/favicon.svg" />
+  <link rel="icon" type="image/png" href="../svg/favicon.svg" />
   <link rel="stylesheet" href="new.css">
   <title>Neuer Account</title>
 </head>
@@ -23,7 +23,7 @@ if (($_POST)) {
   $username = $_POST["username"];
   $username_error;
   if (strlen($username) < 3) {
-    $username_error = "Erstelle einen längeren Namen"; 
+    $username_error = "Erstelle einen längeren Namen";
   }
   $password = $_POST["password"];
   $password_error;
@@ -35,21 +35,21 @@ if (($_POST)) {
   if (strlen($passnr) < 3) {
     $passnr_error = "Das is keine Judo Pass Nr.";
   }
-  
+
   $servername = "localhost";
   $db_username = "root";
   $db_password = "";
   $dbname = "referat";
-  
-  
+
+
   // Create connection
   $conn = new mysqli($servername, $db_username, $db_password, $dbname);
-  
+
   // Check connection
   if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
   }
-  
+
   $check_passnr = "SELECT * FROM users WHERE passnr='$passnr'";
   $result = $conn->query($check_passnr);
   $check_name = "SELECT * FROM users WHERE username='$username'";
@@ -57,15 +57,15 @@ if (($_POST)) {
 
   if ($result->num_rows > 0) {
     // User already exists in the database
-      echo $passnr_exists = 'Diese Pass Nr. existiert schon.';
+    echo $passnr_exists = 'Diese Pass Nr. existiert schon.';
     exit();
   } elseif ($result_name->num_rows > 0) {
-     $name_exists = 'Dieser Username existiert schon.';
-  }else {
+    $name_exists = 'Dieser Username existiert schon.';
+  } else {
     // Insert the data into the database
     $sql = "INSERT INTO users (username, password, passnr) VALUES ('$username', '$password', '$passnr')";
-    
-    
+
+
     if ($conn->query($sql) === TRUE) {
       header('Location: ../home/home.php');
       //TODO: REDIRECT HOME
@@ -124,7 +124,7 @@ if (($_POST)) {
 
       <br style=" margin: 0.5rem" />
 
-      <input type="submit" name="register" value="Register" class="ok" >
+      <input type="submit" name="register" value="Register" class="ok">
     </form>
     <br />
   </div>
