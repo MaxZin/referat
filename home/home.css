@@ -24,7 +24,7 @@
   display: grid;
   justify-content: center;
   height: 5rem;
-  width: 10rem;
+  width: 20rem;
   background: #362419;
   margin-left: 5%;
   margin-right: 5%;
@@ -34,7 +34,7 @@
   display: grid;
   justify-content: center;
   height: 5rem;
-  width: 10rem;
+  width: 20rem;
   background: blue;
   margin-left: 5%;
   margin-right: 5%;
@@ -44,7 +44,7 @@
   display: grid;
   justify-content: center;
   height: 5rem;
-  width: 10rem;
+  width: 20rem;
   background: green;
   margin-left: 5%;
   margin-right: 5%;
@@ -54,7 +54,7 @@
   display: grid;
   justify-content: center;
   height: 5rem;
-  width: 10rem;
+  width: 20rem;
   background: linear-gradient(
     orange 0px,
     orange 33%,
@@ -71,7 +71,7 @@
   display: grid;
   justify-content: center;
   height: 5rem;
-  width: 10rem;
+  width: 20rem;
   background: orange;
   margin-left: 5%;
   margin-right: 5%;
@@ -81,7 +81,7 @@
   display: grid;
   justify-content: center;
   height: 5rem;
-  width: 10rem;
+  width: 20rem;
   background: linear-gradient(
     yellow 0px,
     yellow 33%,
@@ -98,7 +98,7 @@
   display: grid;
   justify-content: center;
   height: 5rem;
-  width: 10rem;
+  width: 20rem;
   background: yellow;
   margin-left: 5%;
   margin-right: 5%;
@@ -108,7 +108,7 @@
   display: grid;
   justify-content: center;
   height: 5rem;
-  width: 10rem;
+  width: 20rem;
   background: linear-gradient(
     white 0px,
     white 33%,
@@ -125,6 +125,7 @@
   display: flex;
   justify-content: space-around;
   margin-bottom: 2rem;
+  gap: 1rem;
 }
 
 .link {
@@ -161,4 +162,11 @@
 
 .origin:hover {
   color: darkturquoise;
+}
+
+@media (max-width: 600px) {
+  .container-item {
+    display: flex;
+    flex-direction: column;
+  }
 }
